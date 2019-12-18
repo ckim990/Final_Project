@@ -13,6 +13,7 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
 import { MyWorkComponent } from './my-work/my-work.component';
 import { SkillsComponent } from './skills/skills.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
