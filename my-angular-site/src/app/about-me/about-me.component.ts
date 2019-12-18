@@ -10,12 +10,8 @@ import { } from 'googlemaps';
 export class AboutMeComponent implements OnInit {
   @ViewChild('map', {static: true}) mapElement: any;
   map: google.maps.Map;
-  // map: google.maps.Map;
-  // mapElement: any;
 
-  constructor() { 
-    
-  }
+  constructor() {}
 
   ngOnInit(): void {
     const mapProperties = {
