@@ -12,7 +12,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { MyWorkComponent } from './my-work/my-work.component';
 import { SkillsComponent } from './skills/skills.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,11 @@ import { SkillsComponent } from './skills/skills.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBWlp3cG-zpD-7w-HksPMvmzcyzyh-Rn88'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

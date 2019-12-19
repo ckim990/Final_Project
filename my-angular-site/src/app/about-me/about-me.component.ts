@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewChild } from '@angular/core';
 import { } from 'googlemaps';
-
+declare var google
 @Component({
   selector: 'app-about-me',
   templateUrl: './about-me.component.html',
@@ -19,7 +19,7 @@ export class AboutMeComponent implements OnInit {
          zoom: 15,
          mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    this.map = new google.maps.Map(this.mapElement.nativeElement,    mapProperties);
+    this.map = new google.maps.Map(this.mapElement.nativeElement, mapProperties);
     
  }
   }
